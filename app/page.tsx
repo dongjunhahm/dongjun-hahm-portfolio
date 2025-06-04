@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import {
   Github,
@@ -21,6 +22,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import EmailCopyButton from "@/components/email-copy-button";
 import { profile } from "console";
 
 export default function Home() {
@@ -350,7 +352,7 @@ export default function Home() {
                         <CardTitle className="flex items-center gap-2">
                           OpenHour
                           <a
-                            href="https://openhour.vercel.app"
+                            href="https://open-hour.vercel.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -772,19 +774,38 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-2 mb-6">
-                  <Button className="bg-slate-900 hover:bg-slate-800">
-                    <FileText className="w-4 h-4 mr-2" />
-                    Resume
-                  </Button>
-                  <Button variant="outline" size="icon" className="h-9 w-9">
-                    <Github className="h-4 w-4" />
-                  </Button>
-                  <Button variant="outline" size="icon" className="h-9 w-9">
-                    <Linkedin className="h-4 w-4" />
-                  </Button>
-                  <Button variant="outline" size="icon" className="h-9 w-9">
-                    <Mail className="h-4 w-4" />
-                  </Button>
+                  <a
+                    href="/DongjunHahm_Junior_Summer2025Resume.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button className="bg-slate-900 hover:bg-slate-800">
+                      <FileText className="w-4 h-4 mr-2" />
+                      Resume
+                    </Button>
+                  </a>
+                  <a
+                    href="https://github.com/dongjunhahm"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" size="icon" className="h-9 w-9">
+                      <Github className="h-4 w-4" />
+                    </Button>
+                  </a>
+
+                  <a
+                    href="https://www.linkedin.com/in/dongjun-hahm/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="outline" size="icon" className="h-9 w-9">
+                      <Linkedin className="h-4 w-4" />
+                    </Button>
+                  </a>
+
+                  {/* Email copy button with notification */}
+                  <EmailCopyButton />
                 </div>
               </div>
 
