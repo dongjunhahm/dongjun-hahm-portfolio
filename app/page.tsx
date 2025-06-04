@@ -37,6 +37,12 @@ export default function Home() {
               About
             </a>
             <a
+              href="#skills"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              Skills
+            </a>
+            <a
               href="#experience"
               className="text-sm font-medium transition-colors hover:text-primary"
             >
@@ -53,12 +59,6 @@ export default function Home() {
               className="text-sm font-medium transition-colors hover:text-primary"
             >
               Education
-            </a>
-            <a
-              href="#skills"
-              className="text-sm font-medium transition-colors hover:text-primary"
-            >
-              Skills
             </a>
           </nav>
           <div className="ml-auto flex items-center space-x-2">
@@ -83,17 +83,125 @@ export default function Home() {
             <section id="about" className="space-y-4">
               <h2 className="text-3xl font-bold">About Me</h2>
               <p className="text-slate-700 text-lg">
-                I'm a student who loves working at the crossroads of business,
-                data, and technology. I've had 3 years of hands-on experience
-                through building full-stack apps, experimenting with AI tools,
-                and digging into analytics projects.
+                Hi, I'm <span className="font-semibold">Dongjun Hahm</span> — a
+                developer passionate about AI, full-stack engineering, and
+                building tools that solve real problems. I’ve built everything
+                from finance chatbots to scheduling apps, always focused on
+                usability, performance, and real-world impact.
               </p>
-              <p className="text-slate-700">
-                Whether it's working with LLMs, PostgreSQL, React, data-driven
-                insights or TypeScript, I enjoy building things that are both
-                technically interesting and genuinely useful to the people who
-                use them.
-              </p>
+            </section>
+
+            <section id="skills" className="space-y-6">
+              <h2 className="text-3xl font-bold">Skills</h2>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-medium">Programming Languages</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      Python
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      JavaScript
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      TypeScript
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      C
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      SQL
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      HiveQL
+                    </Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-medium">
+                    Frameworks & Libraries
+                  </h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      React
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Next.js
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      LangChain
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Pandas
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      SKLearn
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Tailwind CSS
+                    </Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-medium">AI & Data</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      LLMs
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      RAG
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      NLP
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      Machine Learning
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      Ollama
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      ChromaDB
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      Web Scraping
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      Random Forest
+                    </Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-medium">Databases & Tools</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      PostgreSQL
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Firebase
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Figma
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Git
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Hadoop
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Google Calendar API
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      YouTube API
+                    </Badge>
+                  </div>
+                </div>
+              </div>
             </section>
 
             <section id="experience" className="space-y-6">
@@ -616,119 +724,6 @@ export default function Home() {
                   </p>
                 </CardContent>
               </Card>
-            </section>
-
-            <section id="skills" className="space-y-6">
-              <h2 className="text-3xl font-bold">Skills</h2>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Programming Languages</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      Python
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      JavaScript
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      TypeScript
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      C
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      SQL
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      HiveQL
-                    </Badge>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">
-                    Frameworks & Libraries
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      React
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Next.js
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      LangChain
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Pandas
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      SKLearn
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Tailwind CSS
-                    </Badge>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">AI & Data</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      LLMs
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      RAG
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      NLP
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Machine Learning
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Ollama
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      ChromaDB
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Web Scraping
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Random Forest
-                    </Badge>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Databases & Tools</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      PostgreSQL
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Firebase
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Figma
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Git
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Hadoop
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Google Calendar API
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      YouTube API
-                    </Badge>
-                  </div>
-                </div>
-              </div>
             </section>
           </div>
 
