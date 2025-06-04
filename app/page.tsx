@@ -63,17 +63,6 @@ export default function Home() {
               Education
             </a>
           </nav>
-          <div className="ml-auto flex items-center space-x-2">
-            <Button variant="ghost" size="icon" className="h-8 w-8">
-              <Github className="h-4 w-4" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8">
-              <Linkedin className="h-4 w-4" />
-            </Button>
-            <Button variant="ghost" size="icon" className="h-8 w-8">
-              <Mail className="h-4 w-4" />
-            </Button>
-          </div>
         </div>
       </header>
 
@@ -212,8 +201,14 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <div className="bg-blue-500 p-2 rounded-lg text-white font-bold text-lg">
-                      E
+                    <div className="p-2 rounded-lg text-white font-bold text-lg flex items-center justify-center">
+                      <Image
+                        src="/eversana logo.jpg"
+                        alt="Eversana Logo"
+                        width={60}
+                        height={60}
+                        className="object-contain rounded-lg"
+                      />
                     </div>
                     <div>
                       <CardTitle>Innovation/AI Intern</CardTitle>
@@ -247,8 +242,14 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <div className="bg-green-500 p-2 rounded-lg text-white font-bold text-lg">
-                      P
+                    <div className="p-2 rounded-lg text-white font-bold text-lg flex items-center justify-center">
+                      <Image
+                        src="/PolyglotLogo.png"
+                        alt="Polyglot Logo"
+                        width={75}
+                        height={75}
+                        className="object-contain"
+                      />
                     </div>
                     <div>
                       <CardTitle>Fullstack Engineer Intern</CardTitle>
@@ -481,7 +482,16 @@ export default function Home() {
                     <div className="flex items-center gap-3">
                       <Film className="h-8 w-8 text-amber-600" />
                       <div>
-                        <CardTitle>Movie Gross Income Predictor</CardTitle>
+                        <CardTitle className="flex items-center gap-2">
+                          Movie Gross Income Predictor
+                          <a
+                            href="https://colab.research.google.com/drive/1F09w83H5hdg0UMB8yH0jAqRDifsHx8DS?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                          </a>
+                        </CardTitle>
                         <CardDescription>
                           August 2024 • Yonsei University
                         </CardDescription>
@@ -605,7 +615,7 @@ export default function Home() {
                         <CardTitle className="flex items-center gap-2">
                           Cally
                           <a
-                            href="https://github.com/dongjunhahm/Cally"
+                            href="https://cally-nu.vercel.app/"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
@@ -834,7 +844,7 @@ export default function Home() {
                   </div>
                   <div className="mt-4 pt-4 border-t">
                     <p className="text-xs text-slate-500 mb-2">
-                      Popular Repositories:
+                      Github Repositories:
                     </p>
                     <div className="space-y-2">
                       <a
