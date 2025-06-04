@@ -689,8 +689,14 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <div className="bg-blue-600 p-2 rounded-lg text-white font-bold text-lg">
-                      UC
+                    <div className="p-2 rounded-lg text-white font-bold text-lg flex items-center justify-center">
+                      <Image
+                        src="/uc logo.png"
+                        alt="UC Logo"
+                        width={60}
+                        height={60}
+                        className="object-contain rounded-lg"
+                      />
                     </div>
                     <div>
                       <CardTitle>University of California Santa Cruz</CardTitle>
@@ -717,8 +723,14 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <div className="bg-red-500 p-2 rounded-lg text-white font-bold text-lg">
-                      Y
+                    <div className="p-2 rounded-lg text-white font-bold text-lg flex items-center justify-center">
+                      <Image
+                        src="/yonsei logo.png"
+                        alt="Yonsei Logo"
+                        width={55}
+                        height={55}
+                        className="object-contain rounded-lg"
+                      />
                     </div>
                     <div>
                       <CardTitle>Yonsei University</CardTitle>
