@@ -948,10 +948,17 @@ export default function Home() {
                         ChromaDB
                       </Badge>
                     </div>
-                    <Button variant="outline" size="sm" className="w-full">
-                      <Github className="mr-2 h-4 w-4" />
-                      View on GitHub
-                    </Button>
+                    <a
+                      href="https://github.com/dongjunhahm/MarketBuddy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-full"
+                    >
+                      <Button variant="outline" size="sm" className="w-full">
+                        <Github className="mr-2 h-4 w-4" />
+                        View on GitHub
+                      </Button>
+                    </a>
                   </div>
                 </CardContent>
               </Card>
