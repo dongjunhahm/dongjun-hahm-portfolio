@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 import {
   Github,
   Linkedin,
@@ -11,10 +11,17 @@ import {
   Film,
   Tv,
   BarChart,
-} from "lucide-react"
-import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+} from "lucide-react";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { profile } from "console";
 
 export default function Home() {
   return (
@@ -23,19 +30,34 @@ export default function Home() {
       <header className="border-b bg-slate-50">
         <div className="container flex items-center h-14 px-4">
           <nav className="flex items-center space-x-4 lg:space-x-6">
-            <a href="#about" className="text-sm font-medium transition-colors hover:text-primary">
+            <a
+              href="#about"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               About
             </a>
-            <a href="#experience" className="text-sm font-medium transition-colors hover:text-primary">
+            <a
+              href="#experience"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Experience
             </a>
-            <a href="#projects" className="text-sm font-medium transition-colors hover:text-primary">
+            <a
+              href="#projects"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Projects
             </a>
-            <a href="#education" className="text-sm font-medium transition-colors hover:text-primary">
+            <a
+              href="#education"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Education
             </a>
-            <a href="#skills" className="text-sm font-medium transition-colors hover:text-primary">
+            <a
+              href="#skills"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
               Skills
             </a>
           </nav>
@@ -61,13 +83,16 @@ export default function Home() {
             <section id="about" className="space-y-4">
               <h2 className="text-3xl font-bold">About Me</h2>
               <p className="text-slate-700 text-lg">
-                I'm a student who loves working at the crossroads of business, data, and technology. I've had 3 years of
-                hands-on experience through building full-stack apps, experimenting with AI tools, and digging into
-                analytics projects.
+                I'm a student who loves working at the crossroads of business,
+                data, and technology. I've had 3 years of hands-on experience
+                through building full-stack apps, experimenting with AI tools,
+                and digging into analytics projects.
               </p>
               <p className="text-slate-700">
-                Whether it's working with LLMs, PostgreSQL, React, data-driven insights or TypeScript, I enjoy building
-                things that are both technically interesting and genuinely useful to the people who use them.
+                Whether it's working with LLMs, PostgreSQL, React, data-driven
+                insights or TypeScript, I enjoy building things that are both
+                technically interesting and genuinely useful to the people who
+                use them.
               </p>
             </section>
 
@@ -77,19 +102,34 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <div className="bg-blue-500 p-2 rounded-lg text-white font-bold text-lg">E</div>
+                    <div className="bg-blue-500 p-2 rounded-lg text-white font-bold text-lg">
+                      E
+                    </div>
                     <div>
                       <CardTitle>Innovation/AI Intern</CardTitle>
-                      <CardDescription>Eversana • Jun 2025 - Aug 2025 (Incoming)</CardDescription>
+                      <CardDescription>
+                        Eversana • Jun 2025 - Aug 2025 (Incoming)
+                      </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 list-disc list-inside text-slate-700">
-                    <li>Developing and Fine-Tuning LLM-powered applications for pharmaceutical clients</li>
-                    <li>Implementing RAG-based solutions using enterprise data</li>
-                    <li>Working on AI agents supporting drug commercialization and procurement</li>
-                    <li>Ensuring model efficiency and compliance with pharma regulations</li>
+                    <li>
+                      Developing and Fine-Tuning LLM-powered applications for
+                      pharmaceutical clients
+                    </li>
+                    <li>
+                      Implementing RAG-based solutions using enterprise data
+                    </li>
+                    <li>
+                      Working on AI agents supporting drug commercialization and
+                      procurement
+                    </li>
+                    <li>
+                      Ensuring model efficiency and compliance with pharma
+                      regulations
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
@@ -97,17 +137,27 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <div className="bg-green-500 p-2 rounded-lg text-white font-bold text-lg">P</div>
+                    <div className="bg-green-500 p-2 rounded-lg text-white font-bold text-lg">
+                      P
+                    </div>
                     <div>
                       <CardTitle>Fullstack Engineer Intern</CardTitle>
-                      <CardDescription>Polyglot • Jan 2024 - May 2024</CardDescription>
+                      <CardDescription>
+                        Polyglot • Jan 2024 - May 2024
+                      </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 list-disc list-inside text-slate-700">
-                    <li>Worked on an education language learning model, specializing in UX/UI design in Figma</li>
-                    <li>Developed preliminary designs for the conversational AI model and landing page</li>
+                    <li>
+                      Worked on an education language learning model,
+                      specializing in UX/UI design in Figma
+                    </li>
+                    <li>
+                      Developed preliminary designs for the conversational AI
+                      model and landing page
+                    </li>
                     <li>Worked on refining voice recognition model</li>
                   </ul>
                 </CardContent>
@@ -138,9 +188,15 @@ export default function Home() {
                     </div>
                     <div className="hidden md:block">
                       <div className="flex gap-2">
-                        <Badge className="bg-purple-100 text-purple-800">RAG</Badge>
-                        <Badge className="bg-purple-100 text-purple-800">NLP</Badge>
-                        <Badge className="bg-purple-100 text-purple-800">Web Scraping</Badge>
+                        <Badge className="bg-purple-100 text-purple-800">
+                          RAG
+                        </Badge>
+                        <Badge className="bg-purple-100 text-purple-800">
+                          NLP
+                        </Badge>
+                        <Badge className="bg-purple-100 text-purple-800">
+                          Web Scraping
+                        </Badge>
                       </div>
                     </div>
                   </div>
@@ -149,20 +205,30 @@ export default function Home() {
                   <div className="md:hidden mb-3 flex flex-wrap gap-2">
                     <Badge className="bg-purple-100 text-purple-800">RAG</Badge>
                     <Badge className="bg-purple-100 text-purple-800">NLP</Badge>
-                    <Badge className="bg-purple-100 text-purple-800">Web Scraping</Badge>
-                    <Badge className="bg-purple-100 text-purple-800">Ollama</Badge>
-                    <Badge className="bg-purple-100 text-purple-800">ChromaDB</Badge>
+                    <Badge className="bg-purple-100 text-purple-800">
+                      Web Scraping
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800">
+                      Ollama
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800">
+                      ChromaDB
+                    </Badge>
                   </div>
                   <p className="text-slate-700 mb-3">
-                    Finance chatbot RAG system built with Ollama, ChromaDB and Langchain.
+                    Finance chatbot RAG system built with Ollama, ChromaDB and
+                    Langchain.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
                     <li>Scrapes Yahoo Finance daily using BeautifulSoup</li>
                     <li>
-                      Processed scraped articles by chunking and embedding them with Ollama and storing embeddings in
-                      ChromaDB
+                      Processed scraped articles by chunking and embedding them
+                      with Ollama and storing embeddings in ChromaDB
                     </li>
-                    <li>Used LangChain for retrieval to fetch relevant financial context and pass to the LLM</li>
+                    <li>
+                      Used LangChain for retrieval to fetch relevant financial
+                      context and pass to the LLM
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
@@ -175,46 +241,72 @@ export default function Home() {
                       <div>
                         <CardTitle className="flex items-center gap-2">
                           OpenHour
-                          <a href="https://openhour.vercel.app" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://openhour.vercel.app"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <ExternalLink className="h-4 w-4" />
                           </a>
                         </CardTitle>
-                        <CardDescription>February 2025 - April 2025</CardDescription>
+                        <CardDescription>
+                          February 2025 - April 2025
+                        </CardDescription>
                       </div>
                     </div>
                     <div className="hidden md:block">
                       <div className="flex gap-2">
-                        <Badge className="bg-blue-100 text-blue-800">React.js</Badge>
-                        <Badge className="bg-blue-100 text-blue-800">Next.js</Badge>
-                        <Badge className="bg-blue-100 text-blue-800">PostgreSQL</Badge>
+                        <Badge className="bg-blue-100 text-blue-800">
+                          React.js
+                        </Badge>
+                        <Badge className="bg-blue-100 text-blue-800">
+                          Next.js
+                        </Badge>
+                        <Badge className="bg-blue-100 text-blue-800">
+                          PostgreSQL
+                        </Badge>
                       </div>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <div className="md:hidden mb-3 flex flex-wrap gap-2">
-                    <Badge className="bg-blue-100 text-blue-800">React.js</Badge>
+                    <Badge className="bg-blue-100 text-blue-800">
+                      React.js
+                    </Badge>
                     <Badge className="bg-blue-100 text-blue-800">Next.js</Badge>
-                    <Badge className="bg-blue-100 text-blue-800">PostgreSQL</Badge>
-                    <Badge className="bg-blue-100 text-blue-800">Google Calendar API</Badge>
-                    <Badge className="bg-blue-100 text-blue-800">Tailwind CSS</Badge>
+                    <Badge className="bg-blue-100 text-blue-800">
+                      PostgreSQL
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800">
+                      Google Calendar API
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800">
+                      Tailwind CSS
+                    </Badge>
                   </div>
                   <p className="text-slate-700 mb-3">
-                    Built a smart scheduling app that connects Google Calendars to instantly find shared open time slots
-                    with others — no manual input required.
+                    Built a smart scheduling app that connects Google Calendars
+                    to instantly find shared open time slots with others — no
+                    manual input required.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
                     <li>
-                      Developed a full-stack web app using React, Next.js, PostgreSQL, Render, and Firebase, hosted on
-                      Vercel
+                      Developed a full-stack web app using React, Next.js,
+                      PostgreSQL, Render, and Firebase, hosted on Vercel
                     </li>
                     <li>
-                      Designed a real-time availability engine that scans multiple calendars and suggests a range of
-                      optimal meeting times
+                      Designed a real-time availability engine that scans
+                      multiple calendars and suggests a range of optimal meeting
+                      times
                     </li>
-                    <li>Integrated SendGrid for email notifications and Tailwind CSS for a clean, responsive UI</li>
                     <li>
-                      Positioned as a modern alternative to When2Meet — automatic, effortless, and built for speed
+                      Integrated SendGrid for email notifications and Tailwind
+                      CSS for a clean, responsive UI
+                    </li>
+                    <li>
+                      Positioned as a modern alternative to When2Meet —
+                      automatic, effortless, and built for speed
                     </li>
                   </ul>
                 </CardContent>
@@ -232,9 +324,15 @@ export default function Home() {
                     </div>
                     <div className="hidden md:block">
                       <div className="flex gap-2">
-                        <Badge className="bg-orange-100 text-orange-800">LLM</Badge>
-                        <Badge className="bg-orange-100 text-orange-800">TypeScript</Badge>
-                        <Badge className="bg-orange-100 text-orange-800">API Development</Badge>
+                        <Badge className="bg-orange-100 text-orange-800">
+                          LLM
+                        </Badge>
+                        <Badge className="bg-orange-100 text-orange-800">
+                          TypeScript
+                        </Badge>
+                        <Badge className="bg-orange-100 text-orange-800">
+                          API Development
+                        </Badge>
                       </div>
                     </div>
                   </div>
@@ -242,16 +340,27 @@ export default function Home() {
                 <CardContent>
                   <div className="md:hidden mb-3 flex flex-wrap gap-2">
                     <Badge className="bg-orange-100 text-orange-800">LLM</Badge>
-                    <Badge className="bg-orange-100 text-orange-800">TypeScript</Badge>
-                    <Badge className="bg-orange-100 text-orange-800">API Development</Badge>
+                    <Badge className="bg-orange-100 text-orange-800">
+                      TypeScript
+                    </Badge>
+                    <Badge className="bg-orange-100 text-orange-800">
+                      API Development
+                    </Badge>
                   </div>
                   <p className="text-slate-700 mb-3">
-                    Built a Model Context Protocol (MCP) server that allows LLMs to search YouTube and access
-                    transcripts from a single text prompt—in a much simpler way.
+                    Built a Model Context Protocol (MCP) server that allows LLMs
+                    to search YouTube and access transcripts from a single text
+                    prompt—in a much simpler way.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
-                    <li>Integrated the YouTube API to automate video search and transcript retrieval</li>
-                    <li>Built a transcript analysis and summarization pipeline using AI for real-time insights</li>
+                    <li>
+                      Integrated the YouTube API to automate video search and
+                      transcript retrieval
+                    </li>
+                    <li>
+                      Built a transcript analysis and summarization pipeline
+                      using AI for real-time insights
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
@@ -263,44 +372,63 @@ export default function Home() {
                       <Film className="h-8 w-8 text-amber-600" />
                       <div>
                         <CardTitle>Movie Gross Income Predictor</CardTitle>
-                        <CardDescription>August 2024 • Yonsei University</CardDescription>
+                        <CardDescription>
+                          August 2024 • Yonsei University
+                        </CardDescription>
                       </div>
                     </div>
                     <div className="hidden md:block">
                       <div className="flex gap-2">
-                        <Badge className="bg-green-100 text-green-800">Python</Badge>
-                        <Badge className="bg-green-100 text-green-800">Pandas</Badge>
-                        <Badge className="bg-green-100 text-green-800">Random Forest</Badge>
+                        <Badge className="bg-green-100 text-green-800">
+                          Python
+                        </Badge>
+                        <Badge className="bg-green-100 text-green-800">
+                          Pandas
+                        </Badge>
+                        <Badge className="bg-green-100 text-green-800">
+                          Random Forest
+                        </Badge>
                       </div>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <div className="md:hidden mb-3 flex flex-wrap gap-2">
-                    <Badge className="bg-green-100 text-green-800">Python</Badge>
-                    <Badge className="bg-green-100 text-green-800">Pandas</Badge>
-                    <Badge className="bg-green-100 text-green-800">Random Forest</Badge>
-                    <Badge className="bg-green-100 text-green-800">Machine Learning</Badge>
+                    <Badge className="bg-green-100 text-green-800">
+                      Python
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800">
+                      Pandas
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800">
+                      Random Forest
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800">
+                      Machine Learning
+                    </Badge>
                   </div>
                   <p className="text-slate-700 mb-3">
-                    Built a machine learning regression model to predict box office gross income based on IMDb movie
-                    data.
+                    Built a machine learning regression model to predict box
+                    office gross income based on IMDb movie data.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
                     <li>
-                      Cleaned and preprocessed data using Pandas: removed null values, converted runtime formats, and
-                      encoded categorical features
+                      Cleaned and preprocessed data using Pandas: removed null
+                      values, converted runtime formats, and encoded categorical
+                      features
                     </li>
                     <li>
-                      Trained and evaluated a Random Forest Regressor, achieving an R² score of 0.62, with MAE of ~$30M
+                      Trained and evaluated a Random Forest Regressor, achieving
+                      an R² score of 0.62, with MAE of ~$30M
                     </li>
                     <li>
-                      Identified rating, runtime, and genre as the top predictors of success through feature importance
-                      analysis
+                      Identified rating, runtime, and genre as the top
+                      predictors of success through feature importance analysis
                     </li>
                     <li>
-                      Visualized model performance with Matplotlib and extracted insights to inform potential marketing
-                      strategies for studios
+                      Visualized model performance with Matplotlib and extracted
+                      insights to inform potential marketing strategies for
+                      studios
                     </li>
                   </ul>
                 </CardContent>
@@ -313,13 +441,19 @@ export default function Home() {
                       <Tv className="h-8 w-8 text-purple-600" />
                       <div>
                         <CardTitle>TV Show Viewership Analytics</CardTitle>
-                        <CardDescription>July 2024 - August 2024 • Yonsei University</CardDescription>
+                        <CardDescription>
+                          July 2024 - August 2024 • Yonsei University
+                        </CardDescription>
                       </div>
                     </div>
                     <div className="hidden md:block">
                       <div className="flex gap-2">
-                        <Badge className="bg-blue-100 text-blue-800">HiveQL</Badge>
-                        <Badge className="bg-blue-100 text-blue-800">Hadoop</Badge>
+                        <Badge className="bg-blue-100 text-blue-800">
+                          HiveQL
+                        </Badge>
+                        <Badge className="bg-blue-100 text-blue-800">
+                          Hadoop
+                        </Badge>
                         <Badge className="bg-blue-100 text-blue-800">SQL</Badge>
                       </div>
                     </div>
@@ -329,18 +463,25 @@ export default function Home() {
                   <div className="md:hidden mb-3 flex flex-wrap gap-2">
                     <Badge className="bg-blue-100 text-blue-800">HiveQL</Badge>
                     <Badge className="bg-blue-100 text-blue-800">Hadoop</Badge>
-                    <Badge className="bg-blue-100 text-blue-800">Microsoft Excel</Badge>
+                    <Badge className="bg-blue-100 text-blue-800">
+                      Microsoft Excel
+                    </Badge>
                     <Badge className="bg-blue-100 text-blue-800">SQL</Badge>
                   </div>
                   <p className="text-slate-700 mb-3">
-                    Analyzed large data sets of anime viewership using Hive QL and Hadoop.
+                    Analyzed large data sets of anime viewership using Hive QL
+                    and Hadoop.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
                     <li>
-                      Extracted insights such as genre popularity, watch time by location, and top anime by watch days,
-                      while incorporating metrics like gender, country, and location
+                      Extracted insights such as genre popularity, watch time by
+                      location, and top anime by watch days, while incorporating
+                      metrics like gender, country, and location
                     </li>
-                    <li>Used Excel in order to visualize the extracted data for analysis</li>
+                    <li>
+                      Used Excel in order to visualize the extracted data for
+                      analysis
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
@@ -353,7 +494,11 @@ export default function Home() {
                       <div>
                         <CardTitle className="flex items-center gap-2">
                           Cally
-                          <a href="https://github.com/dongjunhahm/Cally" target="_blank" rel="noopener noreferrer">
+                          <a
+                            href="https://github.com/dongjunhahm/Cally"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
                             <ExternalLink className="h-4 w-4" />
                           </a>
                         </CardTitle>
@@ -362,31 +507,56 @@ export default function Home() {
                     </div>
                     <div className="hidden md:block">
                       <div className="flex gap-2">
-                        <Badge className="bg-indigo-100 text-indigo-800">React.js</Badge>
-                        <Badge className="bg-indigo-100 text-indigo-800">Next.js</Badge>
-                        <Badge className="bg-indigo-100 text-indigo-800">JavaScript</Badge>
+                        <Badge className="bg-indigo-100 text-indigo-800">
+                          React.js
+                        </Badge>
+                        <Badge className="bg-indigo-100 text-indigo-800">
+                          Next.js
+                        </Badge>
+                        <Badge className="bg-indigo-100 text-indigo-800">
+                          JavaScript
+                        </Badge>
                       </div>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <div className="md:hidden mb-3 flex flex-wrap gap-2">
-                    <Badge className="bg-indigo-100 text-indigo-800">React.js</Badge>
-                    <Badge className="bg-indigo-100 text-indigo-800">Next.js</Badge>
-                    <Badge className="bg-indigo-100 text-indigo-800">JavaScript</Badge>
-                    <Badge className="bg-indigo-100 text-indigo-800">Tailwind CSS</Badge>
-                    <Badge className="bg-indigo-100 text-indigo-800">API Development</Badge>
+                    <Badge className="bg-indigo-100 text-indigo-800">
+                      React.js
+                    </Badge>
+                    <Badge className="bg-indigo-100 text-indigo-800">
+                      Next.js
+                    </Badge>
+                    <Badge className="bg-indigo-100 text-indigo-800">
+                      JavaScript
+                    </Badge>
+                    <Badge className="bg-indigo-100 text-indigo-800">
+                      Tailwind CSS
+                    </Badge>
+                    <Badge className="bg-indigo-100 text-indigo-800">
+                      API Development
+                    </Badge>
                   </div>
-                  <p className="text-slate-700 mb-3">Making calendar management simple!</p>
+                  <p className="text-slate-700 mb-3">
+                    Making calendar management simple!
+                  </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
                     <li>
-                      Built a React and Next.js application that extracts event details from user prompts using the GPT
-                      API
+                      Built a React and Next.js application that extracts event
+                      details from user prompts using the GPT API
                     </li>
-                    <li>Integrated with the Google Calendar API for seamless event addition and management</li>
-                    <li>Utilized Firebase for secure user authentication and real-time data management</li>
                     <li>
-                      Focused on enhancing productivity and organization for users by simplifying the scheduling process
+                      Integrated with the Google Calendar API for seamless event
+                      addition and management
+                    </li>
+                    <li>
+                      Utilized Firebase for secure user authentication and
+                      real-time data management
+                    </li>
+                    <li>
+                      Focused on enhancing productivity and organization for
+                      users by simplifying the scheduling process
                     </li>
                   </ul>
                 </CardContent>
@@ -399,20 +569,27 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <div className="bg-blue-600 p-2 rounded-lg text-white font-bold text-lg">UC</div>
+                    <div className="bg-blue-600 p-2 rounded-lg text-white font-bold text-lg">
+                      UC
+                    </div>
                     <div>
                       <CardTitle>University of California Santa Cruz</CardTitle>
-                      <CardDescription>September 2023 - Present • GPA: 3.89/4.0 - Junior Standing</CardDescription>
+                      <CardDescription>
+                        September 2023 - Present • GPA: 3.89/4.0 - Junior
+                        Standing
+                      </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="font-medium text-slate-800 mb-2">
-                    Technology Information Management B.S. & Business Management Economics B.A.
+                    Technology Information Management B.S. & Business Management
+                    Economics B.A.
                   </p>
                   <p className="text-slate-600 text-sm">
-                    <strong>Coursework:</strong> Data Structures and Algorithms, Computer Systems and C Programming,
-                    Applied Discrete Mathematics, Systems Analysis and Design
+                    <strong>Coursework:</strong> Data Structures and Algorithms,
+                    Computer Systems and C Programming, Applied Discrete
+                    Mathematics, Systems Analysis and Design
                   </p>
                 </CardContent>
               </Card>
@@ -420,16 +597,22 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <div className="bg-red-500 p-2 rounded-lg text-white font-bold text-lg">Y</div>
+                    <div className="bg-red-500 p-2 rounded-lg text-white font-bold text-lg">
+                      Y
+                    </div>
                     <div>
                       <CardTitle>Yonsei University</CardTitle>
-                      <CardDescription>UCEAP Exchange Student • June 2024 - Aug 2024 • GPA: 3.87/4.0</CardDescription>
+                      <CardDescription>
+                        UCEAP Exchange Student • June 2024 - Aug 2024 • GPA:
+                        3.87/4.0
+                      </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
                 <CardContent>
                   <p className="text-slate-600 text-sm">
-                    <strong>Coursework:</strong> Machine Learning IEE1065, Introduction to Big Data IEE3593
+                    <strong>Coursework:</strong> Machine Learning IEE1065,
+                    Introduction to Big Data IEE3593
                   </p>
                 </CardContent>
               </Card>
@@ -442,51 +625,107 @@ export default function Home() {
                 <div className="space-y-4">
                   <h3 className="text-xl font-medium">Programming Languages</h3>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">Python</Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">JavaScript</Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">TypeScript</Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">C</Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">SQL</Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">HiveQL</Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      Python
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      JavaScript
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      TypeScript
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      C
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      SQL
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      HiveQL
+                    </Badge>
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Frameworks & Libraries</h3>
+                  <h3 className="text-xl font-medium">
+                    Frameworks & Libraries
+                  </h3>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">React</Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">Next.js</Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">LangChain</Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">Pandas</Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">SKLearn</Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">Tailwind CSS</Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      React
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Next.js
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      LangChain
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Pandas
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      SKLearn
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Tailwind CSS
+                    </Badge>
                   </div>
                 </div>
 
                 <div className="space-y-4">
                   <h3 className="text-xl font-medium">AI & Data</h3>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">LLMs</Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">RAG</Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">NLP</Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">Machine Learning</Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">Ollama</Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">ChromaDB</Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">Web Scraping</Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">Random Forest</Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      LLMs
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      RAG
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      NLP
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      Machine Learning
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      Ollama
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      ChromaDB
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      Web Scraping
+                    </Badge>
+                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
+                      Random Forest
+                    </Badge>
                   </div>
                 </div>
 
                 <div className="space-y-4">
                   <h3 className="text-xl font-medium">Databases & Tools</h3>
                   <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">PostgreSQL</Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">Firebase</Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">Figma</Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">Git</Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">Hadoop</Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">Google Calendar API</Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">YouTube API</Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      PostgreSQL
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Firebase
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Figma
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Git
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Hadoop
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Google Calendar API
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      YouTube API
+                    </Badge>
                   </div>
                 </div>
               </div>
@@ -499,7 +738,7 @@ export default function Home() {
               <div className="flex flex-col items-center text-center">
                 <div className="w-40 h-40 rounded-full overflow-hidden mb-4 border-4 border-slate-100">
                   <Image
-                    src="/placeholder.svg?height=160&width=160"
+                    src="/profile_pic.jpeg"
                     alt="Dongjun Hahm profile picture"
                     width={160}
                     height={160}
@@ -578,7 +817,9 @@ export default function Home() {
                     </div>
                   </div>
                   <div className="mt-4 pt-4 border-t">
-                    <p className="text-xs text-slate-500 mb-2">Popular Repositories:</p>
+                    <p className="text-xs text-slate-500 mb-2">
+                      Popular Repositories:
+                    </p>
                     <div className="space-y-2">
                       <a
                         href="https://github.com/dongjunhahm/MarketBuddy"
@@ -633,7 +874,9 @@ export default function Home() {
                 <CardContent>
                   <div className="space-y-3 text-sm">
                     <div>
-                      <span className="font-medium text-slate-700">Current Status:</span>
+                      <span className="font-medium text-slate-700">
+                        Current Status:
+                      </span>
                       <p className="text-slate-600">Junior at UC Santa Cruz</p>
                     </div>
                     <div>
@@ -641,12 +884,18 @@ export default function Home() {
                       <p className="text-slate-600">3.89/4.0</p>
                     </div>
                     <div>
-                      <span className="font-medium text-slate-700">Next Role:</span>
+                      <span className="font-medium text-slate-700">
+                        Next Role:
+                      </span>
                       <p className="text-slate-600">AI Intern at Eversana</p>
                     </div>
                     <div>
-                      <span className="font-medium text-slate-700">Interests:</span>
-                      <p className="text-slate-600">AI, Full-Stack Development, Data Analytics</p>
+                      <span className="font-medium text-slate-700">
+                        Interests:
+                      </span>
+                      <p className="text-slate-600">
+                        AI, Full-Stack Development, Data Analytics
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -659,14 +908,19 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <div className="text-center">
-                    <h3 className="font-medium text-blue-800 mb-1">MarketBuddy</h3>
+                    <h3 className="font-medium text-blue-800 mb-1">
+                      MarketBuddy
+                    </h3>
                     <p className="text-sm text-slate-600 mb-3">
-                      RAG-based finance chatbot that answers questions using news scraped from Yahoo Finance
+                      RAG-based finance chatbot that answers questions using
+                      news scraped from Yahoo Finance
                     </p>
                     <div className="flex justify-center gap-2 mb-3">
                       <Badge className="bg-blue-100 text-blue-800">RAG</Badge>
                       <Badge className="bg-blue-100 text-blue-800">LLMs</Badge>
-                      <Badge className="bg-blue-100 text-blue-800">ChromaDB</Badge>
+                      <Badge className="bg-blue-100 text-blue-800">
+                        ChromaDB
+                      </Badge>
                     </div>
                     <Button variant="outline" size="sm" className="w-full">
                       <Github className="mr-2 h-4 w-4" />
@@ -680,5 +934,5 @@ export default function Home() {
         </div>
       </main>
     </div>
-  )
+  );
 }
