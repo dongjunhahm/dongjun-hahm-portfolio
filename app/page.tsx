@@ -22,7 +22,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import EmailCopyButton from "@/components/email-copy-button";
+import EmailCopyButton from "@/components/ui/email-copy-button";
 import { profile } from "console";
 
 export default function Home() {

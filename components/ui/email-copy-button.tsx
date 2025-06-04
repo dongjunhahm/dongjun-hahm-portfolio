@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button } from "./ui/button"; // adjust import path
+import { Button } from "./button"; // adjust import path
 import { Mail } from "lucide-react";
 
 const email = "dongjunathahm@gmail.com";
