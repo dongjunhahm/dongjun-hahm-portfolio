@@ -90,22 +90,19 @@ export default function Home() {
                   <h3 className="text-xl font-medium">Programming Languages</h3>
                   <div className="flex flex-wrap gap-2">
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      Python
+                      JavaScript
                     </Badge>
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      JavaScript
+                      Python
                     </Badge>
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                       TypeScript
                     </Badge>
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      C
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                       SQL
                     </Badge>
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      HiveQL
+                      C
                     </Badge>
                   </div>
                 </div>
@@ -120,6 +117,9 @@ export default function Home() {
                     </Badge>
                     <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
                       Next.js
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      FastAPI
                     </Badge>
                     <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
                       LangChain
@@ -186,9 +186,6 @@ export default function Home() {
                     </Badge>
                     <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
                       Google Calendar API
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      YouTube API
                     </Badge>
                   </div>
                 </div>
@@ -429,7 +426,16 @@ export default function Home() {
                     <div className="flex items-center gap-3">
                       <Youtube className="h-8 w-8 text-red-600" />
                       <div>
-                        <CardTitle>Claude LLM MCP</CardTitle>
+                        <CardTitle className="flex items-center gap-2">
+                          Claude LLM MCP
+                          <a
+                            href="https://github.com/dongjunhahm/youtube-server-mcp"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <ExternalLink className="h-4 w-4" />
+                          </a>
+                        </CardTitle>
                         <CardDescription>March 2025</CardDescription>
                       </div>
                     </div>
@@ -957,7 +963,7 @@ export default function Home() {
                       <Badge className="bg-blue-100 text-blue-800">RAG</Badge>
                       <Badge className="bg-blue-100 text-blue-800">LLMs</Badge>
                       <Badge className="bg-blue-100 text-blue-800">
-                        ChromaDB
+                        LangChain
                       </Badge>
                     </div>
                     <a
