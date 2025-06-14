@@ -87,7 +87,9 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Programming Languages</h3>
+                  <h3 className="text-xl font-medium">
+                    Languages & Frameworks
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                       JavaScript
@@ -96,96 +98,88 @@ export default function Home() {
                       Python
                     </Badge>
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      C#
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                       TypeScript
                     </Badge>
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                       SQL
                     </Badge>
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      C
+                      React/Next.js
                     </Badge>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">
-                    Frameworks & Libraries
-                  </h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      React
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Next.js
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                       FastAPI
                     </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      LangChain
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Pandas
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      SKLearn
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Tailwind CSS
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      TailwindCSS
                     </Badge>
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-medium">AI & Data</h3>
+                  <h3 className="text-xl font-medium">Data & Databases</h3>
                   <div className="flex flex-wrap gap-2">
                     <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      LLMs
+                      Web Scraping
                     </Badge>
                     <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      RAG
+                      Playwright
                     </Badge>
                     <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      NLP
+                      PostgresQL
                     </Badge>
                     <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Machine Learning
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Ollama
+                      Firebase
                     </Badge>
                     <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
                       ChromaDB
                     </Badge>
                     <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Web Scraping
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Random Forest
+                      Pandas
                     </Badge>
                   </div>
                 </div>
 
                 <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Databases & Tools</h3>
+                  <h3 className="text-xl font-medium">Development Tools</h3>
                   <div className="flex flex-wrap gap-2">
                     <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      PostgreSQL
+                      GitHub
                     </Badge>
                     <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Firebase
+                      Azure
+                    </Badge>
+                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
+                      Jira
                     </Badge>
                     <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
                       Figma
                     </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Git
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-medium">AI</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      AgenticAI
                     </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Hadoop
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      RAG
                     </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Google Calendar API
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      LLMS
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      scikit-learn
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      LangChain
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Ollama
                     </Badge>
                   </div>
                 </div>
@@ -303,6 +297,9 @@ export default function Home() {
                           NLP
                         </Badge>
                         <Badge className="bg-purple-100 text-purple-800">
+                          LangChain
+                        </Badge>
+                        <Badge className="bg-purple-100 text-purple-800">
                           Web Scraping
                         </Badge>
                       </div>
@@ -394,9 +391,8 @@ export default function Home() {
                     </Badge>
                   </div>
                   <p className="text-slate-700 mb-3">
-                    Built a smart scheduling app that connects Google Calendars
-                    to instantly find shared open time slots with others — no
-                    manual input required.
+                    Smart app syncing Google Calendars to find shared free time
+                    instantly.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
                     <li>
@@ -404,17 +400,16 @@ export default function Home() {
                       PostgreSQL, Render, and Firebase, hosted on Vercel
                     </li>
                     <li>
-                      Designed a real-time availability engine that scans
-                      multiple calendars and suggests a range of optimal meeting
-                      times
+                      Created a real-time engine connecting to Google Calendars
+                      to find shared open time slots
                     </li>
                     <li>
-                      Integrated SendGrid for email notifications and Tailwind
-                      CSS for a clean, responsive UI
+                      Integrated SendGrid for email alerts and used Tailwind CSS
+                      for a responsive UI
                     </li>
                     <li>
-                      Positioned as a modern alternative to When2Meet —
-                      automatic, effortless, and built for speed
+                      Modern, automatic alternative to When2Meet focused on
+                      speed and ease
                     </li>
                   </ul>
                 </CardContent>
@@ -448,7 +443,7 @@ export default function Home() {
                           TypeScript
                         </Badge>
                         <Badge className="bg-orange-100 text-orange-800">
-                          API Development
+                          MCP
                         </Badge>
                       </div>
                     </div>
@@ -465,8 +460,8 @@ export default function Home() {
                     </Badge>
                   </div>
                   <p className="text-slate-700 mb-3">
-                    Built a Model Context Protocol (MCP) server that allows LLMs
-                    to search YouTube and access transcripts from a single text
+                    Model Context Protocol (MCP) server that allows LLMs to
+                    search YouTube and access transcripts from a single text
                     prompt—in a much simpler way.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
@@ -534,8 +529,8 @@ export default function Home() {
                     </Badge>
                   </div>
                   <p className="text-slate-700 mb-3">
-                    Built a machine learning regression model to predict box
-                    office gross income based on IMDb movie data.
+                    Machine learning regression model to predict box office
+                    gross income based on IMDb movie data.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
                     <li>
@@ -581,6 +576,9 @@ export default function Home() {
                           Hadoop
                         </Badge>
                         <Badge className="bg-blue-100 text-blue-800">SQL</Badge>
+                        <Badge className="bg-blue-100 text-blue-800">
+                          Excel
+                        </Badge>
                       </div>
                     </div>
                   </div>
@@ -595,8 +593,8 @@ export default function Home() {
                     <Badge className="bg-blue-100 text-blue-800">SQL</Badge>
                   </div>
                   <p className="text-slate-700 mb-3">
-                    Analyzed large data sets of anime viewership using Hive QL
-                    and Hadoop.
+                    Analysis of large data sets of anime viewership using Hive
+                    QL and Hadoop.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
                     <li>
@@ -633,6 +631,10 @@ export default function Home() {
                     </div>
                     <div className="hidden md:block">
                       <div className="flex gap-2">
+                        <Badge className="bg-indigo-100 text-indigo-800">
+                          OpenAI API
+                        </Badge>
+
                         <Badge className="bg-indigo-100 text-indigo-800">
                           React.js
                         </Badge>
