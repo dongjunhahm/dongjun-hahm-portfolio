@@ -192,41 +192,76 @@ export default function Home() {
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
-                    <div className="p-2 rounded-lg text-white font-bold text-lg flex items-center justify-center">
-                      <Image
-                        src="/eversana logo.jpg"
-                        alt="Eversana Logo"
-                        width={60}
-                        height={60}
-                        className="object-contain rounded-lg"
-                      />
-                    </div>
+                    <Image
+                      src="/eversana logo.jpg"
+                      alt="Eversana Logo"
+                      width={48}
+                      height={48}
+                      className="object-contain rounded-md"
+                    />
                     <div>
-                      <CardTitle>Innovation/AI Intern</CardTitle>
+                      <CardTitle>EVERSANA</CardTitle>
                       <CardDescription>
-                        Eversana • Jun 2025 - Aug 2025 (Incoming)
+                        Chicago, Illinois • Remote
                       </CardDescription>
                     </div>
                   </div>
                 </CardHeader>
+
                 <CardContent>
-                  <ul className="space-y-2 list-disc list-inside text-slate-700">
-                    <li>
-                      Developing and Fine-Tuning LLM-powered applications for
-                      pharmaceutical clients
-                    </li>
-                    <li>
-                      Implementing RAG-based solutions using enterprise data
-                    </li>
-                    <li>
-                      Working on AI agents supporting drug commercialization and
-                      procurement
-                    </li>
-                    <li>
-                      Ensuring model efficiency and compliance with pharma
-                      regulations
-                    </li>
-                  </ul>
+                  <div className="relative pl-8">
+                    {/* Vertical timeline bar */}
+                    <div className="absolute left-3 top-0 h-full border-l-2 border-slate-300"></div>
+
+                    {/* Returning Innovation/AI Intern */}
+                    <div className="relative mb-8">
+                      <h3 className="font-semibold text-lg">
+                        Returning Innovation/AI Intern
+                      </h3>
+                      <p className="text-sm text-slate-600">
+                        Aug 2025 – Present
+                      </p>
+                      <ul className="mt-2 space-y-1 list-disc list-inside text-slate-700">
+                        <li>
+                          Expanding platform with third-party integrations
+                          (e.g., SharePoint, Confluence) for use with AI-powered
+                          data and document visualization.
+                        </li>
+                        <li>
+                          Building a video generation pipeline to have AI agents
+                          create scripts, design, and render full length spot
+                          features.
+                        </li>
+                      </ul>
+                    </div>
+
+                    {/* Innovation/AI Intern */}
+                    <div className="relative">
+                      <h3 className="font-semibold text-lg">
+                        Innovation/AI Intern
+                      </h3>
+                      <p className="text-sm text-slate-600">
+                        Jun 2025 – Aug 2025
+                      </p>
+                      <ul className="mt-2 space-y-1 list-disc list-inside text-slate-700">
+                        <li>
+                          Built an agentic AI platform simulating pharmaceutical
+                          marketing workflows (research, content generation,
+                          media creation) using Google’s ADK and Gemini 2.5.
+                        </li>
+                        <li>
+                          Designed secure FastAPI backend with REST endpoints
+                          and a Typescript frontend, implementing data
+                          firewalling and isolated storage for client security.
+                        </li>
+                        <li>
+                          Optimized agent workflows and prompts, reducing token
+                          usage by 25% and driving $250k+ in projected annual
+                          savings.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
 
@@ -805,7 +840,7 @@ export default function Home() {
 
                 <div className="flex flex-wrap justify-center gap-2 mb-6">
                   <a
-                    href="/DongjunHahm_Junior_Summer2025Resume.pdf"
+                    href="/2025_DongjunHahmResume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
