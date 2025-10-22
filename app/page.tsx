@@ -301,6 +301,36 @@ export default function Home() {
               </Card>
             </section>
 
+            <section id="research" className="space-y-6">
+              <h2 className="text-3xl font-bold">Research Experience</h2>
+              <Card>
+                <CardHeader>
+                  <div className="flex items-center gap-4">
+                    <div className="p-2 rounded-lg text-white font-bold text-lg flex items-center justify-center">
+                      <Image
+                        src="/uc logo.png"
+                        alt="UC Logo"
+                        width={60}
+                        height={60}
+                        className="object-contain rounded-lg"
+                      />
+                    </div>
+                    <div>
+                      <CardTitle>Student Researcher</CardTitle>
+                      <CardDescription>
+                        UC Santa Cruz • October 2025 - Present
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 list-disc list-inside text-slate-700">
+                    <li>Researching self explaining neural networks</li>
+                  </ul>
+                </CardContent>
+              </Card>
+            </section>
+
             <section id="projects" className="space-y-6">
               <h2 className="text-3xl font-bold">Projects</h2>
 
