@@ -51,6 +51,12 @@ export default function Home() {
               Experience
             </a>
             <a
+              href="#research"
+              className="text-sm font-medium transition-colors hover:text-primary"
+            >
+              Research
+            </a>
+            <a
               href="#projects"
               className="text-sm font-medium transition-colors hover:text-primary"
             >
@@ -302,7 +308,7 @@ export default function Home() {
             </section>
 
             <section id="research" className="space-y-6">
-              <h2 className="text-3xl font-bold">Research Experience</h2>
+              <h2 className="text-3xl font-bold">Research</h2>
               <Card>
                 <CardHeader>
                   <div className="flex items-center gap-4">
