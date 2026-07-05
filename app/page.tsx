@@ -199,6 +199,47 @@ export default function Home() {
                 <CardHeader>
                   <div className="flex items-center gap-4">
                     <Image
+                      src="/fed_reserve_logo.jpg"
+                      alt="Federal Reserve Logo"
+                      width={48}
+                      height={48}
+                      className="object-contain rounded-md"
+                    />
+                    <div>
+                      <CardTitle>Federal Reserve Board of Governors</CardTitle>
+                      <CardDescription>
+                        DC, Washington • In-Person
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+
+                <CardContent>
+                  <div className="relative pl-8">
+                    {/* Vertical timeline bar */}
+                    <div className="absolute left-3 top-0 h-full border-l-2 border-slate-300"></div>
+
+                    {/* AI Intern */}
+                    <div className="relative mb-8">
+                      <h3 className="font-semibold text-lg">AI Intern</h3>
+                      <p className="text-sm text-slate-600">
+                        June 2026 – Present
+                      </p>
+                      <ul className="mt-2 space-y-1 list-disc list-inside text-slate-700">
+                        <li>
+                          Developing interal AI tooling and conducting research
+                          for the economics field.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card>
+                <CardHeader>
+                  <div className="flex items-center gap-4">
+                    <Image
                       src="/eversana logo.jpg"
                       alt="Eversana Logo"
                       width={48}
@@ -225,7 +266,7 @@ export default function Home() {
                         Returning Innovation/AI Intern
                       </h3>
                       <p className="text-sm text-slate-600">
-                        Aug 2025 – Present
+                        Aug 2025 – Dec 2025
                       </p>
                       <ul className="mt-2 space-y-1 list-disc list-inside text-slate-700">
                         <li>
@@ -331,7 +372,16 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2 list-disc list-inside text-slate-700">
-                    <li>Researching self explaining neural networks</li>
+                    <li>
+                      Developed and evaluated deep learning methods for low-data
+                      image classification by integrating memory-based attention
+                      mechanisms into neural architectures.
+                    </li>
+                    <li>
+                      Conducted hyperparameter tuning and benchmarking across
+                      datasets and backbones against small-data learning
+                      baselines
+                    </li>
                   </ul>
                 </CardContent>
               </Card>
