@@ -79,6 +79,9 @@ export default function Home() {
           <div className="md:col-span-2 space-y-8">
             <section id="about" className="space-y-4">
               <h2 className="text-3xl font-bold">About Me</h2>
+              <p className="text-sm font-medium text-slate-600">
+                Undergraduate Senior at UC Santa Cruz • Graduating June 2027
+              </p>
               <p className="text-slate-700 text-lg">
                 Hi, I'm <span className="font-semibold">Dongjun Hahm</span> — a
                 developer passionate about AI, full-stack engineering, and
@@ -88,142 +91,69 @@ export default function Home() {
               </p>
             </section>
 
-            <section id="skills" className="space-y-6">
+            <section id="skills" className="space-y-4">
               <h2 className="text-3xl font-bold">Skills</h2>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Languages</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      Python
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      TypeScript
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      JavaScript
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      SQL
-                    </Badge>
+              <dl className="space-y-3">
+                {[
+                  {
+                    label: "Languages",
+                    color: "bg-blue-100 text-blue-800 hover:bg-blue-200",
+                    items: ["Python", "TypeScript", "JavaScript", "SQL"],
+                  },
+                  {
+                    label: "Cloud",
+                    color: "bg-red-100 text-red-800 hover:bg-red-200",
+                    items: [
+                      "Google Cloud Platform",
+                      "AWS EKS",
+                      "Docker",
+                      "Kubernetes",
+                      "Argo CD",
+                    ],
+                  },
+                  {
+                    label: "Frameworks",
+                    color: "bg-purple-100 text-purple-800 hover:bg-purple-200",
+                    items: ["FastAPI", "React/Next.js", "REST APIs"],
+                  },
+                  {
+                    label: "AI/ML",
+                    color: "bg-green-100 text-green-800 hover:bg-green-200",
+                    items: [
+                      "Agentic Systems",
+                      "RAG",
+                      "MCP",
+                      "LLM Evaluation",
+                      "GEPA",
+                      "DSPy",
+                      "LangChain",
+                      "Langfuse",
+                      "Ollama",
+                      "Claude Code",
+                    ],
+                  },
+                ].map(({ label, color, items }) => (
+                  <div
+                    key={label}
+                    className="flex flex-col sm:flex-row sm:items-baseline gap-2"
+                  >
+                    <dt className="w-28 shrink-0 text-sm font-semibold text-slate-800">
+                      {label}
+                    </dt>
+                    <dd className="flex flex-wrap gap-1.5">
+                      {items.map((item) => (
+                        <Badge
+                          key={item}
+                          className={color}
+                        >
+                          {item}
+                        </Badge>
+                      ))}
+                    </dd>
                   </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Frameworks</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-200">
-                      FastAPI
-                    </Badge>
-                    <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-200">
-                      React/Next.js
-                    </Badge>
-                    <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-200">
-                      REST APIs
-                    </Badge>
-                    <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-200">
-                      TailwindCSS
-                    </Badge>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Cloud</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200">
-                      Google Cloud Platform (GCP)
-                    </Badge>
-                    <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200">
-                      Docker
-                    </Badge>
-                    <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200">
-                      Kubernetes
-                    </Badge>
-                    <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200">
-                      Azure
-                    </Badge>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">AI/ML</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Agentic Systems
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      RAG
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      MCP
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      LLM Evaluation
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      GEPA
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      DSPy
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      LangChain
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Langfuse
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Ollama
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Claude Code
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      scikit-learn
-                    </Badge>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Data & Databases</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Web Scraping
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Playwright
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      PostgresQL
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Firebase
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      ChromaDB
-                    </Badge>
-                    <Badge className="bg-purple-100 text-purple-800 hover:bg-purple-200">
-                      Pandas
-                    </Badge>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">Development Tools</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      GitHub
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Jira
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Figma
-                    </Badge>
-                  </div>
-                </div>
-              </div>
+                ))}
+              </dl>
             </section>
 
             <section id="experience" className="space-y-6">
@@ -515,14 +445,15 @@ export default function Home() {
                     Langchain.
                   </p>
                   <ul className="space-y-1 list-disc list-inside text-slate-600">
-                    <li>Scrapes Yahoo Finance daily using BeautifulSoup</li>
                     <li>
-                      Processed scraped articles by chunking and embedding them
-                      with Ollama and storing embeddings in ChromaDB
+                      Built a finance-focused RAG chatbot with FastAPI,
+                      delivering real-time insights from Yahoo Finance News.
                     </li>
                     <li>
-                      Used LangChain for retrieval to fetch relevant financial
-                      context and pass to the LLM
+                      Implemented a document embedding and retrieval pipeline
+                      using Ollama and ChromaDB for semantic search, as well as
+                      LangChain for contextual query processing, enhancing the
+                      quality and accuracy of LLM responses.
                     </li>
                   </ul>
                 </CardContent>
@@ -899,8 +830,8 @@ export default function Home() {
                     <div>
                       <CardTitle>University of California Santa Cruz</CardTitle>
                       <CardDescription>
-                        September 2023 - Present • GPA: 3.89/4.0 - Junior
-                        Standing
+                        September 2023 - June 2027 (Expected) • GPA: 3.76/4.0 -
+                        Senior Standing
                       </CardDescription>
                     </div>
                   </div>
@@ -913,7 +844,8 @@ export default function Home() {
                   <p className="text-slate-600 text-sm">
                     <strong>Coursework:</strong> Data Structures and Algorithms,
                     Computer Systems and C Programming, Applied Discrete
-                    Mathematics, Systems Analysis and Design
+                    Mathematics, Systems Analysis and Design, Machine Learning,
+                    Introduction to Big Data
                   </p>
                 </CardContent>
               </Card>
@@ -963,7 +895,10 @@ export default function Home() {
                   />
                 </div>
                 <h1 className="text-2xl font-bold">Dongjun Hahm</h1>
-                <p className="text-slate-600 mb-2">Student & Developer</p>
+                <p className="text-slate-600">Undergraduate Senior & AI Engineer</p>
+                <p className="text-sm text-slate-500 mb-2">
+                  UC Santa Cruz • Class of June 2027
+                </p>
                 <div className="flex items-center text-slate-500 mb-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -995,7 +930,7 @@ export default function Home() {
 
                 <div className="flex flex-wrap justify-center gap-2 mb-6">
                   <a
-                    href="/2025_DongjunHahmResume.pdf"
+                    href="/DongjunHahm_AI_Engineer_Senior.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -1113,11 +1048,13 @@ export default function Home() {
                       <span className="font-medium text-slate-700">
                         Current Status:
                       </span>
-                      <p className="text-slate-600">Junior at UC Santa Cruz</p>
+                      <p className="text-slate-600">
+                        Senior at UC Santa Cruz • Graduating June 2027
+                      </p>
                     </div>
                     <div>
                       <span className="font-medium text-slate-700">GPA:</span>
-                      <p className="text-slate-600">3.89/4.0</p>
+                      <p className="text-slate-600">3.76/4.0</p>
                     </div>
                     <div>
                       <span className="font-medium text-slate-700">
