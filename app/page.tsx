@@ -93,33 +93,94 @@ export default function Home() {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-4">
-                  <h3 className="text-xl font-medium">
-                    Languages & Frameworks
-                  </h3>
+                  <h3 className="text-xl font-medium">Languages</h3>
                   <div className="flex flex-wrap gap-2">
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      JavaScript
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                       Python
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      C#
                     </Badge>
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                       TypeScript
                     </Badge>
                     <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                      JavaScript
+                    </Badge>
+                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
                       SQL
                     </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
-                      React/Next.js
-                    </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-medium">Frameworks</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-200">
                       FastAPI
                     </Badge>
-                    <Badge className="bg-blue-100 text-blue-800 hover:bg-blue-200">
+                    <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-200">
+                      React/Next.js
+                    </Badge>
+                    <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-200">
+                      REST APIs
+                    </Badge>
+                    <Badge className="bg-orange-100 text-orange-800 hover:bg-orange-200">
                       TailwindCSS
+                    </Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-medium">Cloud</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200">
+                      Google Cloud Platform (GCP)
+                    </Badge>
+                    <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200">
+                      Docker
+                    </Badge>
+                    <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200">
+                      Kubernetes
+                    </Badge>
+                    <Badge className="bg-sky-100 text-sky-800 hover:bg-sky-200">
+                      Azure
+                    </Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-medium">AI/ML</h3>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Agentic Systems
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      RAG
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      MCP
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      LLM Evaluation
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      GEPA
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      DSPy
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      LangChain
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Langfuse
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Ollama
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      Claude Code
+                    </Badge>
+                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
+                      scikit-learn
                     </Badge>
                   </div>
                 </div>
@@ -155,37 +216,10 @@ export default function Home() {
                       GitHub
                     </Badge>
                     <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
-                      Azure
-                    </Badge>
-                    <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
                       Jira
                     </Badge>
                     <Badge className="bg-red-100 text-red-800 hover:bg-red-200">
                       Figma
-                    </Badge>
-                  </div>
-                </div>
-
-                <div className="space-y-4">
-                  <h3 className="text-xl font-medium">AI</h3>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      AgenticAI
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      RAG
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      LLMS
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      scikit-learn
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      LangChain
-                    </Badge>
-                    <Badge className="bg-green-100 text-green-800 hover:bg-green-200">
-                      Ollama
                     </Badge>
                   </div>
                 </div>
@@ -208,7 +242,7 @@ export default function Home() {
                     <div>
                       <CardTitle>Federal Reserve Board of Governors</CardTitle>
                       <CardDescription>
-                        DC, Washington • In-Person
+                        Washington, DC • In-Person
                       </CardDescription>
                     </div>
                   </div>
@@ -223,12 +257,41 @@ export default function Home() {
                     <div className="relative mb-8">
                       <h3 className="font-semibold text-lg">AI Intern</h3>
                       <p className="text-sm text-slate-600">
-                        June 2026 – Present
+                        Jun 2026 – Present
                       </p>
                       <ul className="mt-2 space-y-1 list-disc list-inside text-slate-700">
                         <li>
-                          Developing interal AI tooling and conducting research
-                          for the economics field.
+                          Partnered with senior leadership to define a reusable
+                          multi-agent debate architecture and core feature set
+                          for policy and economic review workflows; adopted
+                          across multiple divisions, supporting faster, more
+                          consistent AI-driven economic policy evaluation.
+                        </li>
+                        <li>
+                          Developed a 17-agent, dependency-aware economic paper
+                          review system that models relationships between
+                          claims and paper components, identifies load-bearing
+                          components, and routes targeted analysis to specialist
+                          agents for automated verification and adjudication.
+                        </li>
+                        <li>
+                          Developed a recursive self-improving agent evaluation
+                          pipeline using GEPA and DSPy, building ground-truth
+                          error datasets and evaluation benchmarks with
+                          train/validation/test splits to optimize prompts and
+                          quantitatively improve error detection.
+                        </li>
+                        <li>
+                          Reduced average per-run cost of the multi-agent review
+                          system by 57%, from $10.62 to $4.56 through prompt
+                          caching and orchestration; built a CLI interface,
+                          complementary Overleaf MCP server, and several
+                          enterprise data MCP connectors to integrate agentic
+                          systems into research and enterprise workflows.
+                        </li>
+                        <li>
+                          Researched and developed a novel RAG reranking layer
+                          optimized for hard search-constraint coverage.
                         </li>
                       </ul>
                     </div>
@@ -275,9 +338,9 @@ export default function Home() {
                           data and document visualization.
                         </li>
                         <li>
-                          Building a video generation pipeline to have AI agents
-                          create scripts, design, and render full length spot
-                          features.
+                          Built a multi-stage AI video generation pipeline using
+                          LLM-based scripting, storyboard image generation, and
+                          Veo 3 to automate marketing video production.
                         </li>
                       </ul>
                     </div>
@@ -292,19 +355,22 @@ export default function Home() {
                       </p>
                       <ul className="mt-2 space-y-1 list-disc list-inside text-slate-700">
                         <li>
-                          Built an agentic AI platform simulating pharmaceutical
-                          marketing workflows (research, content generation,
-                          media creation) using Google’s ADK and Gemini 2.5.
+                          Developed an agentic AI platform simulating
+                          pharmaceutical marketing workflows, integrating
+                          research, content generation, and media creation using
+                          Google ADK and Gemini 2.5.
                         </li>
                         <li>
                           Designed secure FastAPI backend with REST endpoints
-                          and a Typescript frontend, implementing data
-                          firewalling and isolated storage for client security.
+                          and a TypeScript frontend, implementing data
+                          firewalling and isolated storage in Google Cloud
+                          Storage for client security.
                         </li>
                         <li>
-                          Optimized agent workflows and prompts, reducing token
-                          usage by 25% and driving $250k+ in projected annual
-                          savings.
+                          Optimized agent orchestration, reducing token usage by
+                          25% and enabling projected $250K in annual savings by
+                          replacing internal agency workflows with the AI
+                          system.
                         </li>
                       </ul>
                     </div>
@@ -363,9 +429,10 @@ export default function Home() {
                       />
                     </div>
                     <div>
-                      <CardTitle>Student Researcher</CardTitle>
+                      <CardTitle>Undergrad Student Researcher</CardTitle>
                       <CardDescription>
-                        UC Santa Cruz • October 2025 - Present
+                        AI Explainability & Accountability Lab, UC Santa Cruz •
+                        Jan 2026 - Present
                       </CardDescription>
                     </div>
                   </div>
@@ -380,7 +447,9 @@ export default function Home() {
                     <li>
                       Conducted hyperparameter tuning and benchmarking across
                       datasets and backbones against small-data learning
-                      baselines
+                      baselines; configured Kubernetes jobs and GPU resource
+                      allocations to orchestrate experiments across shared
+                      clusters.
                     </li>
                   </ul>
                 </CardContent>
@@ -1052,9 +1121,11 @@ export default function Home() {
                     </div>
                     <div>
                       <span className="font-medium text-slate-700">
-                        Next Role:
+                        Current Role:
                       </span>
-                      <p className="text-slate-600">AI Intern at Eversana</p>
+                      <p className="text-slate-600">
+                        AI Intern at the Federal Reserve Board of Governors
+                      </p>
                     </div>
                     <div>
                       <span className="font-medium text-slate-700">
